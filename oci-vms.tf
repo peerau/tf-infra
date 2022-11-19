@@ -23,6 +23,7 @@ resource "oci_core_instance" "oci-syd-nix0" {
 
   metadata = {
     ssh_authorized_keys = var.ssh_public_key
+    user_data = var.user_data
   }
 }
 
@@ -51,6 +52,7 @@ resource "oci_core_instance" "oci-syd-nix1" {
 
   metadata = {
     ssh_authorized_keys = var.ssh_public_key
+    user_data = var.user_data
   }
 }
 
@@ -79,6 +81,7 @@ resource "oci_core_instance" "oci-syd-nix2" {
 
   metadata = {
     ssh_authorized_keys = var.ssh_public_key
+    user_data = var.user_data
   }
 }
 
@@ -107,5 +110,6 @@ resource "oci_core_instance" "oci-syd-nix3" {
 
   metadata = {
     ssh_authorized_keys = var.ssh_public_key
+    user_data = var.user_data
   }
 }
