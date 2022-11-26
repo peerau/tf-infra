@@ -38,7 +38,3 @@ data "oci_core_images" "core_images" {
   sort_by                  = "TIMECREATED"
   sort_order               = "DESC"
 }
-
-data "oci_core_vnic_attachments" "oci-syd_vnic_attachments" {
-    compartment_id = var.compartment_ocid
-}
